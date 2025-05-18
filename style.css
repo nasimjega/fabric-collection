@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+   font-family:'Lato';
+    background: #f9f9f9;
+    color: #333
+}
+.home{
+    border-right: 1px solid rgb(212, 205, 205);
+    height: 70px;
+    padding: 30px;
+}
+.hcontainer{
+    display: flex;
+    background: #ffffff;
+    height: 70px;
+    padding-bottom: 50px; 
+}
+#list{
+    list-style-type: none;
+    margin: auto;
+    padding: 30px;
+}
+#list li{
+     display: inline;
+     padding-right: 19px;
+}
+#list a{
+    text-decoration: none;
+    color: black;
+}
+#list a:hover {
+  color: #0077cc;
+}
+.scontainer{
+    background: linear-gradient(to right, #dcefff, #f1ecec);
+    height: 210px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+.scontainer h1{
+    font-size: 2.5rem;
+}
+.scontainer p{
+    padding: 15px;
+    font-size: 1.3rem;
+}
+button{
+    padding: 5px;
+    background: #0077cc;
+    color: white;
+    max-width: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px;
+}
+.Acontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 40px;
+    justify-content: space-evenly;
+}
+.about{
+    max-width: 600px;
+    flex: 1 1 400px;
+}
+.fabrics{
+    max-width: 500px;
+}
+.fabrics h2{
+    padding-bottom: 10px;
+}
+.fabriccontainer{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+}
+.fabriccontainer img{
+    width:100%;
+    max-height: 200px;
+    border-radius: 8px;
+}
+footer{
+    text-align: center;
+    margin: 30px;
+    background: #d9e3e9;
+    padding: 10px;
+    border-radius: 30px;
+}
+footer a{
+    text-decoration: none;
+    border: 0;
+}
+footer p{
+    padding: 10px;
+}
+.social-icons{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icons a{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d1cccc;
+    color: #333;
+    font-size: 19px;
+}  
+.social-icons a:nth-child(1):hover {
+  background-color: #134ece; 
+}
+
+.social-icons a:nth-child(2):hover {
+  background-color: #30a5ee; 
+}
+
+.social-icons a:nth-child(3):hover {
+  background-color: #e1306c; 
+}
+
+@media (max-width: 768px) {
+   .Acontainer{
+       display: flex;
+       gap: 50px;
+       margin:20px;
+   }
+   .social-icons a:nth-child(1) {
+  background-color: #134ece; 
+}
+
+.social-icons a:nth-child(2) {
+  background-color: #30a5ee; 
+}
+
+.social-icons a:nth-child(3) {
+  background-color: #e1306c;
+}
+}

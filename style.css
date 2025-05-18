@@ -26,7 +26,7 @@ body{
 }
 #list li{
      display: inline;
-     padding-right: 19px;
+     padding-right: 10px;
 }
 #list a{
     text-decoration: none;
@@ -142,6 +142,11 @@ footer p{
 
 .social-icons a:nth-child(2) {
   background-color: #30a5ee; 
+}
+    @media (min-width:367px){
+    #list li{
+    display: inline;
+    padding-right: 19px;
 }
 
 .social-icons a:nth-child(3) {
